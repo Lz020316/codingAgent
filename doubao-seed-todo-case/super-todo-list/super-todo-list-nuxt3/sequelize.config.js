@@ -1,0 +1,10 @@
+import { Sequelize } from 'sequelize';
+
+// Initialize Sequelize with SQLite database
+const sequelize = new Sequelize({
+  dialect: 'sqlite',
+  storage: 'database.sqlite',
+  logging: false // Disable logging for cleaner output
+});
+
+export default sequelize;
